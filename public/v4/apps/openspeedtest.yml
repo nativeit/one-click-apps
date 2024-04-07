@@ -20,8 +20,11 @@ caproverOneClickApp:
             OpenSpeedTest has been successfully deployed!
 
             Enabling `https` under the app settings is recommended.
-
-            **Note**: If you find your results are not accurate, refer to https://github.com/openspeedtest/Speed-Test/issues/4. You may need to adjust the default Nginx configuration in the app's settings (be **careful** when editing your app's Nginx configuration) to disable `http2` and/or adjust the `client_max_body_size`. For more information, see https://github.com/openspeedtest/Nginx-Configuration/blob/f452c9b25bd28b29f9d23b28b6c1ce709bcfde6c/OpenSpeedTest-Server.conf
+            
+            ---
+            **Note**: There are known limitations and/or issues when running a speed test behind a reverse proxy. For more information, see https://github.com/openspeedtest/Speed-Test/issues/4. 
+            
+            For more information about OpenSpeedTest's typical Nginx configuration, see https://github.com/openspeedtest/Nginx-Configuration/blob/f452c9b25bd28b29f9d23b28b6c1ce709bcfde6c/OpenSpeedTest-Server.conf
     displayName: OpenSpeedTest
     isOfficial: true
     description: |-
