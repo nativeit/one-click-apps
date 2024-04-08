@@ -12,7 +12,7 @@ services:
             MYSQL_PASSWORD: $$cap_db_pass
         caproverExtra:
             notExposeAsWebApp: 'true'
-    $$cap_appname-wordpress:
+    $$cap_appname:
         depends_on:
             - $$cap_appname-db
         image: wordpress:$$cap_wp_version
@@ -36,7 +36,7 @@ caproverOneClickApp:
           defaultValue: $$cap_gen_random_hex(16)
         - id: $$cap_wp_version
           label: WordPress Version
-          defaultValue: '6.0.1'
+          defaultValue: '6.5.0'          
           description: Check out their Docker page for the valid tags https://hub.docker.com/r/library/wordpress/tags/
           validRegex: /^([^\s^\/])+$/
         - id: $$cap_db_type
@@ -46,7 +46,7 @@ caproverOneClickApp:
           validRegex: /^(mysql|mariadb)$/
         - id: $$cap_database_version
           label: Database Version, default is MySQL
-          defaultValue: '8.0.29'
+          defaultValue: '8.3.0'
           description: Check out the Docker pages for the valid tags https://hub.docker.com/r/library/mysql/tags/ or https://hub.docker.com/_/mariadb?tab=tags
           validRegex: /^([^\s^\/])+$/
     instructions:
@@ -55,7 +55,7 @@ caproverOneClickApp:
 
             Enter your WordPress Configuration parameters and click on next. A MySQL (database) and a WordPress container will be created for you. The process will take about a minute for the process to finish.
         end: >
-            Wordpress is deployed and available as $$cap_appname-wordpress . 
+            Wordpress is deployed and available as $$cap_appname . 
 
             IMPORTANT: It will take up to 2 minutes for WordPress to be ready. Before that, you might see a 502 error page.
     displayName: WordPress
