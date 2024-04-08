@@ -16,17 +16,17 @@ caproverOneClickApp:
     instructions:
         start: |-
             OpenSpeedTest is a self-hosted speedtest. You can read more about this on https://openspeedtest.com/selfhosted-speedtest.
-            
+
             ---
-            **Note**: There are known limitations and/or issues when running a speed test behind a reverse proxy. For more information, see https://github.com/openspeedtest/Speed-Test/issues/4. 
+            **Note**: There are known limitations and/or issues when running a speed test behind a reverse proxy. For more information, see https://github.com/openspeedtest/Speed-Test/issues/4.
         end: |-
             OpenSpeedTest has been successfully deployed!
 
             Enabling `https` under the app settings is recommended.
-            
+
             ---
             **Note**: There are known limitations and/or issues when running a speed test behind a reverse proxy. For more information, see https://github.com/openspeedtest/Speed-Test/issues/4. 
-            
+
             For more information about OpenSpeedTest's typical Nginx configuration, see https://github.com/openspeedtest/Nginx-Configuration/blob/f452c9b25bd28b29f9d23b28b6c1ce709bcfde6c/OpenSpeedTest-Server.conf
     displayName: OpenSpeedTest
     isOfficial: true
